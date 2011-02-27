@@ -11,5 +11,7 @@ feature "First Feature", %q{
     page.should have_css("#more", :text => '')
     click_link "more"
     page.should have_css("#more", :text => 'this is the content for more')
+    click_link "ajax"
+    page.should have_css("#more form")
   end
 end

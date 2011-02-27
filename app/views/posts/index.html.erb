@@ -26,6 +26,7 @@
 <br />
 
 <%= link_to "more", "#", :id => 'more_link' %>
+<%= link_to "ajax", new_post_path, :id => 'ajax' %>
 
 <div id="more"></div>
 
@@ -33,6 +34,10 @@
 <script type="text/javascript">
   $('#more_link').live('click', function() {
       $('#more').html('this is the content for more');
+  });
+  $('#ajax').live('click', function() {
+      $('#more').load($(this).attr("href"));
+      return false;
   });
 </script>
 
