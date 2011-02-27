@@ -1,18 +1,18 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+#gem 'pg'
+gem 'sqlite3-ruby'
 gem 'devise'
 gem 'steak', :group => :development
 
 group :test do
   gem 'akephalos'
   gem 'rspec-rails'
-  #gem 'cucumber-rails'
   gem 'steak'
   gem 'capybara'
   gem 'database_cleaner'
